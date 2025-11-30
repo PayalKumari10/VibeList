@@ -1,0 +1,441 @@
+/* ============================================
+   CSS Variables - Easy Theme Customization
+   ============================================ */
+:root {
+    /* Colors - Soft, calming palette */
+    --color-bg: #f5f7fa;
+    --color-bg-card: #ffffff;
+    --color-primary: #8b9dc3;
+    --color-primary-hover: #6b7fa3;
+    --color-text: #2d3748;
+    --color-text-light: #718096;
+    --color-text-muted: #a0aec0;
+    --color-success: #68d391;
+    --color-success-light: #c6f6d5;
+    --color-danger: #fc8181;
+    --color-danger-light: #fed7d7;
+    --color-border: #e2e8f0;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+}
+
+/* ============================================
+   Reset & Base Styles
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: var(--spacing-lg);
+}
+
+/* ============================================
+   Container & Layout
+   ============================================ */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* ============================================
+   Header
+   ============================================ */
+.header {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    font-weight: 400;
+}
+
+/* ============================================
+   Main App Container
+   ============================================ */
+.app {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: 0 4px 6px var(--color-shadow), 0 1px 3px var(--color-shadow);
+}
+
+/* ============================================
+   Input Section
+   ============================================ */
+.input-section {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.task-input {
+    flex: 1;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+    transition: all var(--transition-normal);
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: var(--color-bg-card);
+    box-shadow: 0 0 0 3px rgba(139, 157, 195, 0.1);
+}
+
+.task-input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.btn-add {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    white-space: nowrap;
+}
+
+.btn-add:hover {
+    background: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.btn-add:active {
+    transform: translateY(0);
+}
+
+.btn-add:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 157, 195, 0.3);
+}
+
+/* ============================================
+   Help Text
+   ============================================ */
+.help-text {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   Task Stats
+   ============================================ */
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.task-count {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.btn-clear {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: transparent;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-clear:hover {
+    background: var(--color-danger-light);
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.btn-clear:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(252, 129, 129, 0.2);
+}
+
+.btn-clear.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ============================================
+   Task List
+   ============================================ */
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    animation: fadeIn var(--transition-slow);
+}
+
+.task-item:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.task-item.completed {
+    background: var(--color-success-light);
+    border-color: var(--color-success);
+    opacity: 0.7;
+}
+
+.task-item.removing {
+    animation: fadeOut var(--transition-normal) forwards;
+}
+
+/* Checkbox */
+.task-checkbox {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border: 2px solid var(--color-border);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    background: var(--color-bg-card);
+}
+
+.task-checkbox:hover {
+    border-color: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.task-checkbox svg {
+    opacity: 0;
+    transform: scale(0);
+    transition: all var(--transition-fast);
+}
+
+.task-item.completed .task-checkbox {
+    background: var(--color-success);
+    border-color: var(--color-success);
+}
+
+.task-item.completed .task-checkbox svg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Task Text */
+.task-text {
+    flex: 1;
+    font-size: 1rem;
+    color: var(--color-text);
+    word-break: break-word;
+    transition: all var(--transition-normal);
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: var(--color-text-light);
+}
+
+/* Delete Button */
+.btn-delete {
+    padding: var(--spacing-xs);
+    background: transparent;
+    color: var(--color-text-muted);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    opacity: 0;
+}
+
+.task-item:hover .btn-delete {
+    opacity: 1;
+}
+
+.btn-delete:hover {
+    background: var(--color-danger-light);
+    color: var(--color-danger);
+    transform: scale(1.1);
+}
+
+.btn-delete:focus {
+    outline: none;
+    opacity: 1;
+    box-shadow: 0 0 0 2px rgba(252, 129, 129, 0.2);
+}
+
+/* ============================================
+   Empty State
+   ============================================ */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl) 0;
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+.empty-state svg {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-muted);
+}
+
+.empty-state p {
+    font-size: 1rem;
+}
+
+.empty-state.hidden {
+    display: none;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.footer {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+}
+
+.footer p {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 600px) {
+    body {
+        padding: var(--spacing-md);
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .app {
+        padding: var(--spacing-lg);
+    }
+    
+    .input-section {
+        flex-direction: column;
+    }
+    
+    .btn-add {
+        justify-content: center;
+    }
+    
+    .task-stats {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: flex-start;
+    }
+    
+    .btn-delete {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   Accessibility - Focus Styles
+   ============================================ */
+*:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
