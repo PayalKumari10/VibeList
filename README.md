@@ -1,4 +1,4 @@
-# **VibeList** 🚀
+# 🚀 **VibeList**
 
 **VibeList** is an interactive to-do app built using **HTML, CSS, and JavaScript** that helps users manage daily tasks efficiently. It is part of the **Kiro project** and demonstrates practical web development skills and frontend functionality.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## **Features** ✨
+## ✨ **Features**
 
 - Add, edit, and delete tasks  
 - Mark tasks as completed  
@@ -16,7 +16,7 @@
 
 ---
 
-## **Technology Stack** 🛠️
+## 🛠️ **Technology Stack** �️
 
 - **HTML5** – Semantic structure  
 - **CSS3** – Styling, responsive layouts  
@@ -24,7 +24,7 @@
 
 ---
 
-## **Getting Started**
+## 🚀 **Getting Started**
 
 1. Clone or download the repository  
 2. Open `index.html` in your web browser  
@@ -34,6 +34,9 @@
 
 ---
 
-## **License** 📝
+## 📝 **AWS builder link**
+builder.aws.com/content/35n3VnMJKbvq9a1BV2Fn2sy6S7a/building-vibelist-with-kiro-week-1-micro-tools-challenge
+
+## 🔒 **License** 📝
 
 This project is licensed under the **MIT License**. You are free to **use, modify, and distribute** it for personal or commercial purposes.
