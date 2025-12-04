@@ -1,39 +1,39 @@
-##VibeList 🚀
+# **VibeList** 🚀
 
-VibeList is an interactive to-do app built using HTML, CSS, and JavaScript that helps users manage daily tasks efficiently. It is part of the Kiro project and demonstrates practical web development skills and frontend functionality.
+**VibeList** is an interactive to-do app built using **HTML, CSS, and JavaScript** that helps users manage daily tasks efficiently. It is part of the **Kiro project** and demonstrates practical web development skills and frontend functionality.
 
-🌐 Live Demo: vibe-list.vercel.app
+🌐 **Live Demo:** [vibe-list.vercel.app](https://vibe-list.vercel.app)
 
-##Features ✨
+---
 
-Add, edit, and delete tasks
+## **Features** ✨
 
-Mark tasks as completed
+- Add, edit, and delete tasks  
+- Mark tasks as completed  
+- Responsive design for mobile, tablet, and desktop  
+- Clean, intuitive user interface  
+- Lightweight and fast  
 
-Responsive design for mobile, tablet, and desktop
+---
 
-Clean, intuitive user interface
+## **Technology Stack** 🛠️
 
-Lightweight and fast
+- **HTML5** – Semantic structure  
+- **CSS3** – Styling, responsive layouts  
+- **JavaScript** – DOM manipulation, task management  
 
-##Technology Stack 🛠️
+---
 
-HTML5 – Semantic structure
+## **Getting Started**
 
-CSS3 – Styling, responsive layouts
+1. Clone or download the repository  
+2. Open `index.html` in your web browser  
+3. Start managing your tasks immediately  
 
-JavaScript – DOM manipulation, task management
+*No installation or dependencies required.*
 
-##Getting Started
+---
 
-Clone or download the repository
+## **License** 📝
 
-Open index.html in your web browser
-
-Start managing your tasks immediately
-
-No installation or dependencies required.
-
-##License 📝
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute it for personal or commercial purposes.
+This project is licensed under the **MIT License**. You are free to **use, modify, and distribute** it for personal or commercial purposes.
