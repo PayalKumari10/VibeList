@@ -35,7 +35,7 @@
 ---
 
 ## 📝 **AWS builder link**
-[Building VibeList with Kiro Week 1 Micro Tools Challenge](builder.aws.com/content/35n3VnMJKbvq9a1BV2Fn2sy6S7a/building-vibelist-with-kiro-week-1-micro-tools-challenge)
+builder.aws.com/content/35n3VnMJKbvq9a1BV2Fn2sy6S7a/building-vibelist-with-kiro-week-1-micro-tools-challenge
 
 ## 🔒 **License** 📝
 
